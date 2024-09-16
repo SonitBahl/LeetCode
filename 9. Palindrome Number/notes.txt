@@ -1,0 +1,4 @@
+Time Complexity: O(n)
+Space Complexity: O(1)
+
+TODO: solve it without converting the integer to a string
