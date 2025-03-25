@@ -1,0 +1,2 @@
+Time Complexity: O(log(min(ranks) * cars²))
+Space Complexity: O(1)
