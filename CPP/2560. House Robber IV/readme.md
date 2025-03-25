@@ -1,0 +1,55 @@
+# 2560. House Robber IV
+
+## Problem Statement
+There are several consecutive houses along a street, each of which has some money inside. A robber wants to steal money from the homes, but he refuses to steal from adjacent homes.
+
+The **capability** of the robber is the maximum amount of money he steals from one house among all the houses he robbed.
+
+You are given an integer array `nums` representing how much money is stashed in each house. More formally, the `i-th` house from the left has `nums[i]` dollars.
+
+You are also given an integer `k`, representing the minimum number of houses the robber will steal from. It is always possible to steal at least `k` houses.
+
+Return the **minimum capability** of the robber out of all the possible ways to steal at least `k` houses.
+
+---
+
+## Examples
+
+### Example 1:
+#### Input:
+```cpp
+nums = [2,3,5,9], k = 2
+```
+#### Output:
+```cpp
+5
+```
+#### Explanation:
+There are three ways to rob at least 2 houses:
+- Rob the houses at indices 0 and 2. Capability is `max(nums[0], nums[2]) = 5`.
+- Rob the houses at indices 0 and 3. Capability is `max(nums[0], nums[3]) = 9`.
+- Rob the houses at indices 1 and 3. Capability is `max(nums[1], nums[3]) = 9`.
+
+The minimum capability required among all choices is `min(5, 9, 9) = 5`.
+
+---
+
+### Example 2:
+#### Input:
+```cpp
+nums = [2,7,9,3,1], k = 2
+```
+#### Output:
+```cpp
+2
+```
+#### Explanation:
+There are 7 ways to rob at least 2 houses. The way which leads to the minimum capability is to rob the house at index `0` and `4`.
+Return `max(nums[0], nums[4]) = 2`.
+
+---
+
+## Constraints:
+- `1 <= nums.length <= 10^5`
+- `1 <= nums[i] <= 10^9`
+- `1 <= k <= (nums.length + 1) / 2`
