@@ -1,0 +1,2 @@
+Time Complexity: O(k^n * n)
+Space Complexity: O(k^n * n)
